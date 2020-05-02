@@ -2,76 +2,94 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="новости, новости культуры">
+    <meta name="description" content="новости культуры">
+    <link rel="stylesheet" href="style.css">
     <title>Новости культуры</title>
 </head>
 <body>
     <header>
-        Новости культуры
-
-        НОВОСТИ
-        ОБЗОРЫ
-        МУЗЫКА
-        АРХИТЕКТУРА
-        КИНО
-        ТЕАТР
-        ЛИТЕРАТУРА
-        РЕЛИГИЯ
-        ЖИВОПИСЬ
+        <h1 class="main__header">Новости культуры</h1>
+        <nav class="header__navigation">
+            <a href="">НОВОСТИ</a>
+            <a href="">ОБЗОРЫ</a>
+            <a href="">МУЗЫКА</a>
+            <a href="">АРХИТЕКТУРА</a>
+            <a href="">КИНО</a>
+            <a href="">ТЕАТР</a>
+            <a href="">ЛИТЕРАТУРА</a>
+            <a href="">РЕЛИГИЯ</a>
+            <a href="">ЖИВОПИСЬ</a>
+        </nav>
     </header>
     <main>
-        Подводный отель
-        Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти
-        <section>
-            <h2>Обзоры</h2>
-            <article>
-                <img src="" alt="">
-                «Шальные годы» Монпарнаса
-                В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»
-            </article>
-            <article>
-                <img src="" alt="">
-                Анатомия за 30 секунд
-                Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно‑популярной литературе заметно вырос
-            </article>
-            <article>
-                <img src="" alt="">
-                Сферические чудаки
-                Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»
-            </article>
+        <section class="top-news">
+            <div class="top-news__icon">
+                <img src="./images/Group24.svg" alt="">
+            </div>
+            <h2 class="top-news__header">Подводный отель</h2>
+            <p class="top-news__text">Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
         </section>
-        <section>
-            АБОНЕМЕНТЫ В ТЕАТР
+        <section class="overview">
+            <h2 class="overview__header">Обзоры</h2>
+            <div class="overview__item">
+                <img class="overview__img" src="./images/Monparnas.jpg" alt="">
+                <h3 class="overview__title">«Шальные годы» Монпарнаса</h3>
+                <p class="overview__text">
+                    В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»
+                </p>
+            </div>
+            <div class="overview__item  overview__item_type_active">
+                <img class="overview__img" src="./images/Anatomy.png" alt="">
+                <h3 class="overview__title">Анатомия за 30 секунд</h3>
+                <p class="overview__text">
+                    Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно‑популярной литературе заметно вырос
+                </p>
+            </div>
+            <div class="overview__item">
+                <img class="overview__img" src="./images/Sphere.jpg" alt="">
+                <h3 class="overview__title">Сферические чудаки</h3>
+                <p class="overview__text">
+                    Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»
+                </p>
+            </div>
+        </section>
+        <section class="season-tikets">
+            <h2 class="season-tikets__header">АБОНЕМЕНТЫ В ТЕАТР</h2>
+            <div class="season-tikets__feature">
+                <h3 class="season-tikets__feature-title">Скидка 50% на весь сезон 2020</h3>
+                <p class="season-tikets__feature-text">Покупая абонемент на сезон 2020 года вы сэкономите половину стоимости всех спектаклей</p>
+            </div>
 
-            Скидка 50% на весь сезон 2020
-            Покупая абонемент на сезон 2020 года вы сэкономите половину стоимости всех спектаклей
+            <div class="season-tikets__feature">
+                <h3 class="season-tikets__feature-title">Места у сцены</h3>
+                <p class="season-tikets__feature-text">Только для обладателей абонементов будет возможность сесть поближе к сцене</p>
+            </div>
 
-            Места у сцены
-            Только для обладателей абонементов будет возможность сесть поближе к сцене
-
-            Автограф-сессия актёров
-            После спектаклей у вас будет возможность пообщаться с актёрами и взять у них автограф
-
-            <a rel="stylesheet" href="">
-                <button>
-                    смотреть
-                </button>
+            <div class="season-tikets__feature">
+                <h3 class="season-tikets__feature-title">Автограф-сессия актёров</h3>
+                <p class="season-tikets__feature-text">После спектаклей у вас будет возможность пообщаться с актёрами и взять у них автограф</p>
+            </div>
+            <a href="">
+                <div class="season-tikets__button">
+                    <span>смотреть</span>
+                </div>
             </a>
         </section>
     </main>
     <footer>
         <!--тут подозрительно похоже на хеадер-->
-        Новости культуры
-        <nav>
-            НОВОСТИ
-            ОБЗОРЫ
-            МУЗЫКА
-            АРХИТЕКТУРА
-            КИНО
-            ТЕАТР
-            ЛИТЕРАТУРА
-            РЕЛИГИЯ
-            ЖИВОПИСЬ
+        <h2 class="footer__header">Новости культуры</h2>
+        <nav class="footer__navigation">
+            <a href="">НОВОСТИ</a>
+            <a href="">ОБЗОРЫ</a>
+            <a href="">МУЗЫКА</a>
+            <a href="">АРХИТЕКТУРА</a>
+            <a href="">КИНО</a>
+            <a href="">ТЕАТР</a>
+            <a href="">ЛИТЕРАТУРА</a>
+            <a href="">РЕЛИГИЯ</a>
+            <a href="">ЖИВОПИСЬ</a>
         </nav>
         <div>
             ссылки на социалные сети

@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.main-title {
+    font-size: 35px;
+    line-height: 47px;
+
+    text-align: center;
+}
+
+.main__header,
+.footer__header {
+    font-family: "Playfair Display", Times, serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* header */
+header {
+    height: 218px;
+    padding: 60px 134px 47px 135px;
+}
+
+header a {
+    color: #000;
+}
+
+.header__navigation {
+    letter-spacing: 2px;
+}
+
+/* top news */
+.top-news {
+    height: 464px;
+    background-image: url(./images/Hotel-Dubai.jpg);
+
+    color: #fff;
+
+    padding-top: 46px;
+}
+
+.top-news__icon {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.top-news__header {
+    font-size: 72px;
+    line-height: 84px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.top-news__text {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    width: 456px;
+    margin: 0 auto;
+}
+
+/* overview */
+
+.overview__header {
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.overview__img {
+    width: 370px;
+}
+
+.overview__title {
+    font-family: "Playfair Display", Times, serif;
+    font-weight: 900;
+
+    font-size: 23px;
+    line-height: 31px;
+}
+
+.overview__item_type_active .overview__title {
+    color:#FF7931;
+}
+
+.overview__text {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+/* season-tikets */
+
+.season-tikets {
+    height: 556px;
+    background-color: #F7F7F7;
+}
+
+.season-tikets__header {
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.season-tikets__feature-title {
+    font-family: "Playfair Display", Times, serif;
+    font-weight: 900;
+
+    font-size: 23px;
+    line-height: 31px;
+}
+
+
+.season-tikets__feature-text {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.season-tikets__button {
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    line-height: 14px;
+
+    width: 170px;
+    height: 47px;
+
+    background-color: #FF7931;
+}
+
+a .season-tikets__button{
+    color: #fff;
+}
+
+/* footer */
+footer {
+    color: #fff;
+    background-color: #575757;
+}
+.footer__header {
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 1px;
+}
+
+.footer__navigation {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 2px;
+}
+
+.footer__navigation a {
+    color: #fff;
+}
