@@ -1,10 +1,14 @@
 body {
+    min-width: 1170px;
+
     margin: 0;
     padding: 0;
 
     font-family: "Roboto", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
+
+    background-color: #fff;
 }
 h1, h2, h3, p {
     margin: 0;
@@ -21,7 +25,25 @@ nav {
     line-height: 18px;
 }
 
-.main-title {
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.main__header {
     font-size: 35px;
     line-height: 47px;
 
@@ -36,32 +58,54 @@ nav {
 }
 
 /* header */
-header {
-    height: 218px;
-    padding: 60px 134px 47px 135px;
-}
-
-header a {
+.header a {
     color: #000;
 }
 
+.header a:hover {
+    color:#FF7931;
+}
+
 .header__navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
     letter-spacing: 2px;
+
+    padding-bottom: 47px;
+}
+
+.main__header {
+    padding-top: 60px;
+    padding-bottom: 46px;
+    letter-spacing: .4px;
 }
 
 /* top news */
 .top-news {
-    height: 464px;
-    background-image: url(./images/Hotel-Dubai.jpg);
-
     color: #fff;
+}
 
+.top-news__container {
+    background-image: url(./images/Hotel-Dubai.jpg);
+    background-repeat: no-repeat;
+    background-position: -135px 0;
     padding-top: 46px;
 }
 
 .top-news__icon {
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 32px;
+}
+
+.top-news__text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 326px;
 }
 
 .top-news__header {
@@ -71,7 +115,6 @@ header a {
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
-    margin: 0 auto;
 }
 
 .top-news__text {
@@ -79,10 +122,14 @@ header a {
     line-height: 21px;
     text-align: center;
     width: 456px;
-    margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 /* overview */
+.overview__container {
+    padding-top: 44px;
+    padding-bottom: 51px;
+}
 
 .overview__header {
     font-weight: 900;
@@ -91,6 +138,18 @@ header a {
     letter-spacing: 2px;
     font-size: 17px;
     line-height: 20px;
+    text-align: center;
+}
+
+.overview__items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.overview__item {
+    width: 370px;
+    margin-top: 20px;
 }
 
 .overview__img {
@@ -103,6 +162,8 @@ header a {
 
     font-size: 23px;
     line-height: 31px;
+
+    margin-top: 20px;
 }
 
 .overview__item_type_active .overview__title {
@@ -112,13 +173,25 @@ header a {
 .overview__text {
     font-size: 14px;
     line-height: 21px;
+
+    margin-top: 10px;
 }
 
 /* season-tikets */
 
 .season-tikets {
-    height: 556px;
+    margin-bottom: 50px;
     background-color: #F7F7F7;
+}
+.season-tikets__container {
+    display: flex;
+    flex-direction: column;
+    background-image: url('./images/Ellipse.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding-top: 33px;
+    padding-bottom: 36px;
 }
 
 .season-tikets__header {
@@ -128,6 +201,33 @@ header a {
     letter-spacing: 2px;
     font-size: 17px;
     line-height: 20px;
+    text-align: center;
+    margin-bottom: 11px;
+}
+
+.season-tikets__features-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.season-tikets__feature {
+    position: relative;
+    margin-top: 24px;
+}
+
+.season-tikets__feature:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 135px;
+    width: 100px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.4;
 }
 
 .season-tikets__feature-title {
@@ -136,12 +236,15 @@ header a {
 
     font-size: 23px;
     line-height: 31px;
+
+    margin-bottom: 10px;
 }
 
 
 .season-tikets__feature-text {
     font-size: 14px;
     line-height: 21px;
+    margin-bottom: 21px;
 }
 
 .season-tikets__button {
@@ -151,15 +254,32 @@ header a {
     letter-spacing: 2px;
     font-size: 12px;
     line-height: 14px;
+    margin: 25px auto 0;
+}
 
-    width: 170px;
-    height: 47px;
+.season-tikets__button {
+    position: relative;
+}
 
+.season-tikets__button-link {
+    display: block;
+    padding: 15px 60px 15px 30px;
+    color: #fff;
     background-color: #FF7931;
 }
 
-a .season-tikets__button{
-    color: #fff;
+.season-tikets__button-link::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url('./images/icon_arrow_forward.svg');
+    position: absolute;
+    top: 14px;
+    right: 30px;
+}
+
+.season-tikets__button-link:hover {
+    background-color: #dc5912;
 }
 
 /* footer */
@@ -167,18 +287,78 @@ footer {
     color: #fff;
     background-color: #575757;
 }
+
+.footer__container {
+    padding-top: 26px;
+    padding-bottom: 46px;
+}
+
 .footer__header {
     font-size: 28px;
     line-height: 37px;
     letter-spacing: 1px;
+    text-align: center;
+    padding-bottom: 32px;
 }
 
 .footer__navigation {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-bottom: 46px;
+
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 2px;
 }
 
+.footer__navigation::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.4;
+}
+
 .footer__navigation a {
     color: #fff;
+}
+
+.footer__navigation a:hover {
+    color:#FF7931;
+}
+
+.footer__social {
+    text-align: center;
+    padding-top: 42px;
+}
+
+.footer__social-links-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.footer__social-links-item {
+    padding: 0 7px;
+}
+
+.footer__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 47px;
+    background-color: #fff;
+}
+
+.footer__link:hover {
+    background-color: #ff7931;
 }
